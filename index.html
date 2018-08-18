@@ -1,17 +1,26 @@
 <!DOCTYPE html>
- <html class="no-js"> 
+ <html> 
     <head>
         <meta charset="utf-8">
-        <title>Adding Data</title>
+        <title>Adding and Updating Data</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-       <div class="container">
-           <h1>Adding Book</h1>
+       <div class="container" stye="margin-top:20px">
+           <h1 style="margin-bottom: 50px;">Adding and Updating Data</h1>
+           <div class="container">
+            <div class="input-group">
+              <input id="isbn-input-box" type="text" class="form-control" placeholder="ISBN...">
+              <span class="input-group-btn">
+                 <button id="fetch-book-button" type="button" class="btn btn-primary">Get!</button>
+              </span>
+            </div>
+          </div>
+          <div class="container" style="margin-top:20px;">
            <form id="create-book-form">
                <div class="form-group">
                    <label class="control-label" for="isbn">Isbn</label>
-                   <input class="form-control" id="isbn" name="isbn" type="text"/>
+                   <input class="form-control" id="isbn" name="isbn" type="text" readonly/>
                </div>
                <div class="form-group">
                  <label class="control-label" for="name">Name</label>
@@ -22,8 +31,10 @@
                  <input class="form-control" id="year" name="year" type="text"/>
                </div>
                <button id="create-book-button" type="submit" class="btn btn-primary">Create</button>
-           </form>
-       </div>        
+               <button id="update-book-button" type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>  
+       </div>      
         <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
        <script src="script.js"></script>
     </body>
