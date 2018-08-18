@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Adding Data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+       <div class="container">
+           <h1>Adding Book</h1>
+           <form id="create-book-form">
+               <div class="form-group">
+                   <label class="control-label" for="isbn">Isbn</label>
+                   <input class="form-control" id="isbn" name="isbn" type="text"/>
+               </div>
+               <div class="form-group">
+                 <label class="control-label" for="name">Name</label>
+                 <input class="form-control" id="name" name="name" type="text"/>
+               </div>
+               <div class="form-group">
+                 <label class="control-label" for="year">Publication Year</label>
+                 <input class="form-control" id="year" name="year" type="text"/>
+               </div>
+               <button id="create-book-button" type="submit" class="btn btn-primary">Create</button>
+           </form>
+       </div>        
+        <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+       <script src="script.js"></script>
+    </body>
+</html>
